@@ -13,7 +13,7 @@ import ndk.utils_android1.ToastUtils;
 
 public class DbInsertUpdateDeleteWrapper {
 
-    public static void executeDbInsertUpdateDeletePostWithParameters(String taskURL, ArrayList<NameValuePair> parameters, Context context, View progressBar, View view, String applicationName, HttpApiSelectTask.AsyncResponseJSONObject asyncResponseJsonObject) {
+    public static void executeDbInsertUpdateDeletePostWithParameters(String taskURL, ArrayList<NameValuePair> parameters, Context context, View progressBar, View view, String applicationName, HttpApiSelectTask3.AsyncResponseJSONObject asyncResponseJsonObject) {
 
         if (NetworkUtils.isOnline(context)) {
 
@@ -28,7 +28,7 @@ public class DbInsertUpdateDeleteWrapper {
         }
     }
 
-    public static void executeDbInsertUpdateDeletePostWithParameters(String taskURL, ArrayList<NameValuePair> parameters, Context context, View progressBar, View view, String applicationName, HttpApiSelectTask.AsyncResponseJSONArray asyncResponseJsonArray) {
+    public static void executeDbInsertUpdateDeletePostWithParameters(String taskURL, ArrayList<NameValuePair> parameters, Context context, View progressBar, View view, String applicationName, HttpApiSelectTask3.AsyncResponseJSONArray asyncResponseJsonArray) {
 
         if (NetworkUtils.isOnline(context)) {
 
@@ -43,7 +43,7 @@ public class DbInsertUpdateDeleteWrapper {
         }
     }
 
-    public static void executeDbInsertUpdateDeletePostWithParameters(String taskURL, ArrayList<NameValuePair> parameters, Context context, View progressBar, View view, String applicationName, HttpApiSelectTask.AsyncResponse asyncResponse) {
+    public static void executeDbInsertUpdateDeletePostWithParameters(String taskURL, ArrayList<NameValuePair> parameters, Context context, View progressBar, View view, String applicationName, HttpApiSelectTask3.AsyncResponse asyncResponse) {
 
         if (NetworkUtils.isOnline(context)) {
 

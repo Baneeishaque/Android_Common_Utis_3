@@ -19,7 +19,7 @@ import ndk.utils_android1.ToastUtils;
 
 // TODO : Integrate with ndk.utils_android3.DbSelect
 
-public class HttpApiSelectTask extends AsyncTask<Void, Void, String[]> {
+public class HttpApiSelectTask3 extends AsyncTask<Void, Void, String[]> {
 
     boolean background_flag = false;
     boolean error_flag = true;
@@ -36,7 +36,7 @@ public class HttpApiSelectTask extends AsyncTask<Void, Void, String[]> {
     private int responseFlag = 0;
     private int splashFlag = 0;
 
-    public HttpApiSelectTask(String url, Context context, View progressBar, View form, String TAG, Pair[] name_value_pair, AsyncResponseJSONArray asyncResponseJSONArray) {
+    public HttpApiSelectTask3(String url, Context context, View progressBar, View form, String TAG, Pair[] name_value_pair, AsyncResponseJSONArray asyncResponseJSONArray) {
         this.url = url;
         this.context = context;
         this.progressBar = progressBar;

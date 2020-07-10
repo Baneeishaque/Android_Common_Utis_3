@@ -9,15 +9,14 @@ import ndk.utils_android1.NetworkUtils;
 import ndk.utils_android1.ProgressBarUtils;
 import ndk.utils_android1.ToastUtils;
 
-public class HttpApiSelectTaskWrapper {
+public class HttpApiSelectTaskWrapper3 {
 
-    public static void execute(String task_URL, Context context, View progressView, View loginFormView, String applicationName, Pair[] nameValuePairs, HttpApiSelectTask.AsyncResponseJSONArray asyncResponseJSONArray) {
+    public static void execute(String task_URL, Context context, View progressView, View loginFormView, String applicationName, Pair[] nameValuePairs, HttpApiSelectTask3.AsyncResponseJSONArray asyncResponseJSONArray) {
 
         if (NetworkUtils.isOnline(context)) {
 
             ProgressBarUtils.showProgress(true, context, progressView, loginFormView);
-            HttpApiSelectTask httpApiSelectTask = new HttpApiSelectTask(task_URL, context, progressView, loginFormView, applicationName, nameValuePairs, asyncResponseJSONArray);
-            httpApiSelectTask.execute();
+            new HttpApiSelectTask3(task_URL, context, progressView, loginFormView, applicationName, nameValuePairs, asyncResponseJSONArray).execute();
 
         } else {
 

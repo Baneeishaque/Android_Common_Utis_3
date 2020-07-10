@@ -38,14 +38,14 @@ public class DbSelect extends AsyncTask<Void, Void, String[]> {
     private View progressBar;
     private View form;
 
-    private HttpApiSelectTask.AsyncResponseJSONObject asyncResponseJsonObject = null;
-    private HttpApiSelectTask.AsyncResponseJSONArray asyncResponseJsonArray = null;
-    private HttpApiSelectTask.AsyncResponse asyncResponse = null;
+    private HttpApiSelectTask3.AsyncResponseJSONObject asyncResponseJsonObject = null;
+    private HttpApiSelectTask3.AsyncResponseJSONArray asyncResponseJsonArray = null;
+    private HttpApiSelectTask3.AsyncResponse asyncResponse = null;
 
     private boolean isProgressBarPresent = true;
 
     // Returns JSON object
-    public DbSelect(String URL, Context context, View progressBar, View form, String TAG, HttpApiSelectTask.AsyncResponseJSONObject asyncResponseJsonObject) {
+    public DbSelect(String URL, Context context, View progressBar, View form, String TAG, HttpApiSelectTask3.AsyncResponseJSONObject asyncResponseJsonObject) {
 
         this.URL = URL;
         this.context = context;
@@ -58,7 +58,7 @@ public class DbSelect extends AsyncTask<Void, Void, String[]> {
     }
 
     // Get With Parameters - Returns JSON array
-    public DbSelect(String URL, Context context, View progressBar, View form, String TAG, HttpApiSelectTask.AsyncResponseJSONArray asyncResponseJsonArray) {
+    public DbSelect(String URL, Context context, View progressBar, View form, String TAG, HttpApiSelectTask3.AsyncResponseJSONArray asyncResponseJsonArray) {
 
         this.URL = URL;
         this.context = context;
