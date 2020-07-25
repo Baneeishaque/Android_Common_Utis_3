@@ -10,7 +10,7 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import ndk.utils_android1.ExceptionUtils;
+import ndk.utils_android1.ExceptionUtils1;
 import ndk.utils_android1.HttpGet;
 import ndk.utils_android1.LogUtilsWrapper;
 import ndk.utils_android1.NetworkUtils;
@@ -113,7 +113,7 @@ public class DbSelect extends AsyncTask<Void, Void, String[]> {
 
                 } catch (JSONException e) {
 
-                    ExceptionUtils.handleException(isForeGround, context, TAG, e);
+                    ExceptionUtils1.handleException(isForeGround, context, TAG, e);
                 }
             }
 
@@ -149,7 +149,7 @@ public class DbSelect extends AsyncTask<Void, Void, String[]> {
                     }
                 } catch (JSONException e) {
 
-                    ExceptionUtils.handleException(isForeGround, context, TAG, e);
+                    ExceptionUtils1.handleException(isForeGround, context, TAG, e);
                 }
             }
         }

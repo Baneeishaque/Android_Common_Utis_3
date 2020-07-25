@@ -13,7 +13,7 @@ import org.json.JSONObject;
 
 import java.util.ArrayList;
 
-import ndk.utils_android1.ExceptionUtils;
+import ndk.utils_android1.ExceptionUtils1;
 import ndk.utils_android1.HttpPost;
 import ndk.utils_android1.LogUtilsWrapper;
 import ndk.utils_android1.NetworkUtils;
@@ -140,7 +140,7 @@ public class DbInsertUpdateDelete extends AsyncTask<Void, Void, String[]> {
 
                 } catch (JSONException e) {
 
-                    ExceptionUtils.handleException(isForeGround, context, TAG, e);
+                    ExceptionUtils1.handleException(isForeGround, context, TAG, e);
                 }
             }
 
@@ -175,7 +175,7 @@ public class DbInsertUpdateDelete extends AsyncTask<Void, Void, String[]> {
                     }
                 } catch (JSONException e) {
 
-                    ExceptionUtils.handleException(isForeGround, context, TAG, e);
+                    ExceptionUtils1.handleException(isForeGround, context, TAG, e);
                 }
             }
         }
