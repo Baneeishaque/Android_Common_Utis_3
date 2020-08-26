@@ -2,13 +2,14 @@ apply plugin: 'com.android.library'
 
 android {
 
-    compileSdkVersion 29
-    buildToolsVersion "29.0.3"
+    compileSdkVersion 30
+    buildToolsVersion "30.0.2"
     useLibrary  'org.apache.http.legacy'
 
     defaultConfig {
+
         minSdkVersion 3
-        targetSdkVersion 29
+        targetSdkVersion 30
         versionCode 1
         versionName "1.0"
 
@@ -19,11 +20,10 @@ android {
     buildTypes {
 
         release {
+
             minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
-
-        //The `initWith` property allows you to copy configurations from other build types,then configure just the settings you want to change.
         staging {
 
             initWith release
@@ -31,12 +31,6 @@ android {
         }
     }
 
-    lintOptions {
-
-        abortOnError false
-    }
-
-    // Specifies flavor dimension.
     flavorDimensions "relevence"
     productFlavors {
 
@@ -89,5 +83,5 @@ dependencies {
 
     implementation fileTree(dir: "libs", include: ["*.jar"])
     implementation project(path: ':Utils_1:common1')
-    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.appcompat:appcompat:1.2.0'
 }
