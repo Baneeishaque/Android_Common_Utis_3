@@ -77,11 +77,14 @@ android {
             setIgnore(true)
         }
     }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
 }
 
 dependencies {
 
     implementation fileTree(dir: "libs", include: ["*.jar"])
     implementation project(path: ':Utils_1:common1')
-    implementation 'androidx.appcompat:appcompat:1.2.0'
 }
